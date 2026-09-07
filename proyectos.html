@@ -23,39 +23,45 @@
             </div>
             <!-- Contenedor en Cuadrícula -->
             <div class="projects-grid" id="lista-proyectos">
-                
-                <div class="card">
+                <div class="card tarjeta-clickable" data-id="1">
                     <h3>Proyecto #1</h3>
                     <p>Flujo automatizado para la gestión, escalamiento y notificación ... interactuando directamente con ...</p>
                     <div class="tools">Power Automate, PowerShell, API REST</div>
                 </div>
-                
-                <div class="card">
+                <div class="card tarjeta-clickable" data-id="2">
                     <h3>Proyecto #2</h3>
                     <p>Flujo automatizado para la gestión, escalamiento y notificación ... interactuando directamente con ...</p>
                     <div class="tools">n8n, Docker Compose, APIs</div>
                 </div>
-
                 <div class="card">
                     <h3>Proyecto #3</h3>
                     <p>Flujo automatizado para la gestión, escalamiento y notificación ... interactuando directamente con ...</p>
                     <div class="tools">Power Apps, Dataverse, SharePoint</div>
                 </div>
-
                 <div class="card">
                     <h3>Proyecto #4</h3>
                     <p>Flujo automatizado para la gestión, escalamiento y notificación ... interactuando directamente con ...</p>
                     <div class="tools">Power Apps, Power BI, Copilot</div>
                 </div>
-
                 <div class="card">
                     <h3>Proyecto #5</h3>
                     <p>Flujo automatizado para la gestión, escalamiento y notificación ... interactuando directamente con ...</p>
                     <div class="tools">Automate Desktop, Outlook, SharePoint</div>
                 </div>
-
             </div>
         </main>
+        <!-- Fondo oscuro del Modal (Oculto por defecto) -->
+        <div id="modal-proyecto" class="modal-overlay">
+            <!-- Caja del contenido -->
+            <div class="modal-content">
+                <span class="close-btn" id="cerrar-modal">&times;</span>
+                <h2 id="modal-titulo">Título del Proyecto</h2>
+                <div class="tools" id="modal-herramientas" style="margin-bottom: 1.5rem;">Herramientas</div>
+                
+                <!-- Aquí JavaScript inyectará todo el HTML detallado (textos, imágenes, iframes) -->
+                <div id="modal-cuerpo" class="modal-body"></div>
+            </div>
+        </div>
         <!-- Buscador en tiempo real -->
         <script src="assets/js/barraDeBusqueda.js"></script>
     </body>
