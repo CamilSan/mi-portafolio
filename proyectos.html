@@ -11,17 +11,17 @@
             <div class="logo">Camilo Sanguino</div>
             <nav>
                 <a href="index.html" class="nav-btn">Inicio</a>
-                <button class="nav-btn" type="button">Sobre mí</button>
-                <button class="nav-btn" type="button">Contacto</button>
+                <a href="sobre-mi.html" class="nav-btn" style="text-decoration: none;">Sobre mí</a>
+                <a href="contacto.html" class="nav-btn" style="text-decoration: none;">Contacto</a>
             </nav>
         </header>
         <main>
             <h2 class="section-title">Todos mis Proyectos</h2>
-            <!-- Barra de Búsqueda -->
+            <!-- Barra de busqueda -->
             <div class="search-container">
                 <input type="text" id="buscador" placeholder="Buscar por herramienta (ej. SharePoint, n8n, Python)...">
             </div>
-            <!-- Contenedor en Cuadrícula -->
+            <!-- Contenedor en cuadricula -->
             <div class="projects-grid" id="lista-proyectos">
                 <div class="card tarjeta-clickable" data-id="1">
                     <h3>Proyecto #1</h3>
@@ -50,15 +50,14 @@
                 </div>
             </div>
         </main>
-        <!-- Fondo oscuro del Modal (Oculto por defecto) -->
+        <!-- Fondo oscuro del modal -->
         <div id="modal-proyecto" class="modal-overlay">
             <!-- Caja del contenido -->
             <div class="modal-content">
                 <span class="close-btn" id="cerrar-modal">&times;</span>
                 <h2 id="modal-titulo">Título del Proyecto</h2>
                 <div class="tools" id="modal-herramientas" style="margin-bottom: 1.5rem;">Herramientas</div>
-                
-                <!-- Aquí JavaScript inyectará todo el HTML detallado (textos, imágenes, iframes) -->
+                <!-- Se inyecta todo el html detallado -->
                 <div id="modal-cuerpo" class="modal-body"></div>
             </div>
         </div>
