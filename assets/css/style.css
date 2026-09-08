@@ -219,6 +219,18 @@ a.nav-btn {
     text-align: center;
 }
 
+/* Pie de pagina */
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto; /* Empuja el contenedor al fondo de la pantalla */
+    background-color: rgba(255, 255, 255, 0.4);
+    border-top: 2px solid var(--baltic-blue);
+    color: var(--deep-walnut);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
 /* Responsividad para móviles */
 @media (max-width: 768px) {
     .profile-container {
