@@ -102,6 +102,13 @@ main {
     box-shadow: 6px 6px 0px var(--baltic-blue);
 }
 
+.profile-image img {
+    width: 100%;       /* Para que ocupe todo el ancho del contenedor */
+    height: 100%;      /* Para que ocupe todo el alto del contenedor */
+    object-fit: cover; /* Evita que la imagen se deforme o se estire */
+    /*border-radius: 50%; /* Opcional: Esto hace que la foto se vea circular */
+}
+
 .profile-text {
     display: flex;
     flex-direction: column;
